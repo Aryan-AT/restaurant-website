@@ -241,7 +241,7 @@ section {
     color: #111;
 }
 .testimonials{
-    background-image: url(/img/bg2.jpg);
+    background-image: url(bg2.jpg);
     background-size: cover;
 }
 
