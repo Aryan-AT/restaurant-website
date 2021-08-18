@@ -6,8 +6,6 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
     scroll-behavior: smooth;
-    width: 100%;
-    max-width: 100%;
 }
 p{
     font-weight: 300;
@@ -23,6 +21,7 @@ body {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: url(bg.jpg);
@@ -375,23 +374,33 @@ section {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     *{
         margin: 0;
         padding: 0;
         width: 100%;
+        max-width: 100%;
+    }
+    .banner{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
     }
     header{
         width: 100%;
         padding: 5px;
+        max-width: 100%;
         display: block;
-        max-width:100%;
     }
     .sticky{
         padding-left: 30px;
     }
     #icon{
         color: red;
+        float: left;
+        width: 20px;
     }
     #navbar{
         position: relative;
@@ -436,11 +445,12 @@ section {
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 0px 150px;
+        padding: 0px 30%;
     }
     .menu .content{
         display: flex;
         flex-direction:row;
+        width: 100%;
         max-width: 100%;
         padding: 0px;
     }
@@ -472,11 +482,12 @@ section {
     .testimonials{
         padding: 0;
         margin: 0;
+        width: 100%;
     }
     .testimonials .content {
         display: flex;
         justify-content: flex-start;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         flex-direction: row;
         margin-top: 40px;
     }
@@ -485,15 +496,16 @@ section {
         margin: 10px;
         padding: 10px;
     }
-    #contact{
-        margin: 30px;
+
+    .contact{
+        padding: 0px;
+        background: aqua;
+        margin: 50px 0px 0px 0px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: aqua;
-        border-radius: 100px;
-        width: 90% ;
+        justify-content:left ;
+        align-items:flex-start ;
+        text-align:left ;
+        width: 100%;
     }
 }
