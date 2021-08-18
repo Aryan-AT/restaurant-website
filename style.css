@@ -6,6 +6,8 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
     scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
 }
 p{
     font-weight: 300;
